@@ -8,6 +8,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+a {
+  margin-right: 10px; /* Adds 10 pixels of space to the right of each link */
+}
 
 body {
   background: #fff;
@@ -529,8 +532,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro img{
-  max-width: 15%;
-  height: auto;
+  width: auto;
+ max-height: 30%;
 }
 
 #intro p {
@@ -810,6 +813,33 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #schedule {
   padding: 60px 0 60px 0;
+}
+
+#schedule .flou-planning{
+  position: relative;
+  filter: blur(7px);
+  background-color: #f6f7fd;
+ u ser-select: none;
+}
+
+
+#schedule .infoi{
+  margin-bottom: 10;
+  font-size: x-large;
+  text-align: center;
+  width: auto;
+  top: 40%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-weight: normal;
+  margin: 0;
+  position: absolute;
+}
+
+#schedule .container2{
+  height: auto;
+  position: relative;
 }
 
 #schedule .nav-tabs {
@@ -1400,9 +1430,33 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #e0072f;
 }
 
+
+
+#contact .social-links a {
+  font-size: 14px;
+  display: inline-block;
+  background: #222636;
+  color: #eee;
+  line-height: 1;
+  padding-top: 15px;
+  margin-right: 10%;
+  border-radius: 50%;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  transition: 0.3s;
+}
+
+#contact .social-links a:hover {
+  background: #f82249;
+  color: #fff;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
+
 
 #footer {
   background: #101522;
@@ -1450,12 +1504,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #eee;
   line-height: 1;
   padding: 8px 0;
-  margin-right: 4px;
+  margin-right: 10px;
   border-radius: 50%;
   text-align: center;
   width: 36px;
   height: 36px;
   transition: 0.3s;
+}
+
+#footer .footer-top .social-links-bis .social-links a {
+  font-size: 25px;
+  width: 45px;
+  height: 45px;
+  padding: 8px 1px;
+  margin-left: auto;
+  margin-bottom: 10%;
+  margin-right: auto;
 }
 
 #footer .footer-top .social-links a:hover {
@@ -1508,6 +1572,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right:0px;
 }
 
 #footer .footer-top .footer-contact p {
