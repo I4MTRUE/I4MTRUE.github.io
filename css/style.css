@@ -876,6 +876,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 auto 30px auto;
 }
 
+h6 {
+  color:grey;
+}
+
 #schedule .tab-pane {
   transition: ease-in-out .2s;
 }
@@ -899,7 +903,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #schedule .schedule-item .speaker {
   width: 60px;
   height: 60px;
-  overflow: hidden;
+  overflow: visible;
   border-radius: 50%;
   float: left;
   margin: 0 10px 10px 0;
